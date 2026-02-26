@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>静寂の記録 | 廃墟・廃校・遺構アーカイブ</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Shippori+Mincho+B1:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="">
+    <div class="noise-overlay"></div>
+    <header class="hero ">
+        <div class="hero-content fade-in-up">
+            <p class="subtitle">Fragments of Time</p>
+            <h1 class="title"><a href="/" style="color: inherit; text-decoration: none;">静寂の記録</a></h1>
+            <p class="description">忘れ去られた場所が囁く、記憶の断片。</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="main-layout">
+    <!-- Left Social Sidebar -->
+    <aside class="social-sidebar fade-in-up" style="animation-delay: 0.2s;">
+        <div class="sidebar-sticky">
+            <span class="sidebar-title">Follow Us</span>
+            <div class="social-links">
+                
+                <a href="https://x.com/your_account" class="social-icon" title="X (Twitter)" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg>
+                </a>
+                
+
+                
+                <a href="https://instagram.com/your_account" class="social-icon" title="Instagram" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                
+
+                
+            </div>
+            <div class="sidebar-line"></div>
+        </div>
+    </aside>
+
+    <!-- Main Content Grid -->
+    <div class="content-area">
+        <section class="filters fade-in-up" style="animation-delay: 0.3s;">
+            <div class="genre-filter">
+                <button class="filter-btn active" data-genre="all">すべて</button>
+                <button class="filter-btn" data-genre="ruin">廃墟</button>
+                <button class="filter-btn" data-genre="school">廃校</button>
+                <button class="filter-btn" data-genre="relic">遺構</button>
+            </div>
+            <div class="prefecture-filter">
+                <select id="pref-select" class="custom-select">
+                    <option value="all">都道府県 （すべて）</option>
+                    <option value="kumamoto">熊本県</option>
+                    <option value="fukuoka">福岡県</option>
+                    <option value="nagasaki">長崎県</option>
+                    <option value="oita">大分県</option>
+                    <option value="kagoshima">鹿児島県</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="gallery">
+        
+            <article class="card reveal-3d" data-genre="school" data-pref="kumamoto">
+                <a href="/posts/school-001/" class="card-image-wrap">
+                    <img src="/images/haikyo_school.png" alt="廃校" class="card-image" onerror="this.src='https://images.unsplash.com/photo-1544609756-32d887a03dfb?q=80&w=800&auto=format&fit=crop'">
+                </a>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span class="genre-tag">廃校</span>
+                        <span class="pref-tag">熊本県</span>
+                    </div>
+                    <h2 class="card-title">旧●●小学校跡</h2>
+                    <p class="card-excerpt">山間にひっそりと佇む木造校舎。黒板には最後に書かれたであろうメッセージが微かに残っていた...</p>
+                    <a href="/posts/school-001/" class="read-more">記録を読む <span class="arrow">→</span></a>
+                </div>
+            </article>
+        
+            <article class="card reveal-3d" data-genre="ruin" data-pref="nagasaki">
+                <a href="/posts/ruin-001/" class="card-image-wrap">
+                    <img src="/images/haikyo_ruins.png" alt="廃墟" class="card-image" onerror="this.src='https://images.unsplash.com/photo-1544609756-32d887a03dfb?q=80&w=800&auto=format&fit=crop'">
+                </a>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span class="genre-tag">廃墟</span>
+                        <span class="pref-tag">長崎県</span>
+                    </div>
+                    <h2 class="card-title">海に沈む炭鉱施設</h2>
+                    <p class="card-excerpt">かつて栄華を極めた炭鉱の島。波の音だけが響き渡り、コンクリートの残骸が赤茶色に染まっている。</p>
+                    <a href="/posts/ruin-001/" class="read-more">記録を読む <span class="arrow">→</span></a>
+                </div>
+            </article>
+        
+            <article class="card reveal-3d" data-genre="relic" data-pref="fukuoka">
+                <a href="/posts/relic-001/" class="card-image-wrap">
+                    <img src="/images/haikyo_relics.png" alt="遺構" class="card-image" onerror="this.src='https://images.unsplash.com/photo-1544609756-32d887a03dfb?q=80&w=800&auto=format&fit=crop'">
+                </a>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span class="genre-tag">遺構</span>
+                        <span class="pref-tag">福岡県</span>
+                    </div>
+                    <h2 class="card-title">旧志免鉱業所竪坑櫓</h2>
+                    <p class="card-excerpt">空に向かってそびえ立つ異形の巨塔。近代化産業遺産として、その姿は圧倒的な存在感を放つ。</p>
+                    <a href="/posts/relic-001/" class="read-more">記録を読む <span class="arrow">→</span></a>
+                </div>
+            </article>
+        
+        </section>
+    </div>
+
+    <!-- Right Sidebar for User Contributions -->
+    <aside class="index-sidebar-right fade-in-up" style="animation-delay: 0.4s;">
+        <div class="sidebar-sticky">
+            <div class="contribution-box">
+                <h3>記録を提供する</h3>
+                <p>皆様からの廃墟・遺構の調査記録や写真を募集しています。貴重なアーカイブ構築にご協力ください。</p>
+                
+                <!-- Google Form Link -->
+                <a href="#" class="action-btn primary" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    <span>専用フォームから送信</span>
+                </a>
+
+                
+                <a href="https://x.com/your_account" class="action-btn" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg>
+                    <span>X (Twitter) のDM</span>
+                </a>
+                
+
+                
+                <a href="https://instagram.com/your_account" class="action-btn" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    <span>Instagram のDM</span>
+                </a>
+                
+            </div>
+        </div>
+    </aside>
+</div>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 廃墟アーカイブ - Fragments of Time</p>
+    </footer>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
