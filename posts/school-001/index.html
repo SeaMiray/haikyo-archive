@@ -39,7 +39,7 @@
                             <li>
                                 <a href="/haikyo-archive/posts/ruin-001/" class="nav-post-card">
                                     <div class="nav-post-thumb">
-                                        <img src="/haikyo-archive/images/haikyo_ruins.png" alt="海に沈む炭鉱施設" onerror="this.src='https://images.unsplash.com/photo-1544609756-32d887a03dfb?q=80&w=200&auto=format&fit=crop'">
+                                        <img src="/haikyo-archive/images/haikyo_ruins.png" alt="海に沈む炭鉱施設" loading="lazy" decoding="async" onerror="this.src='https://images.unsplash.com/photo-1544609756-32d887a03dfb?q=80&w=200&auto=format&fit=crop'">
                                     </div>
                                     <div class="nav-post-info">
                                         <span class="nav-genre">廃墟</span>
@@ -53,7 +53,7 @@
                             <li>
                                 <a href="/haikyo-archive/posts/relic-001/" class="nav-post-card">
                                     <div class="nav-post-thumb">
-                                        <img src="/haikyo-archive/images/haikyo_relics.png" alt="旧志免鉱業所竪坑櫓" onerror="this.src='https://images.unsplash.com/photo-1544609756-32d887a03dfb?q=80&w=200&auto=format&fit=crop'">
+                                        <img src="/haikyo-archive/images/haikyo_relics.png" alt="旧志免鉱業所竪坑櫓" loading="lazy" decoding="async" onerror="this.src='https://images.unsplash.com/photo-1544609756-32d887a03dfb?q=80&w=200&auto=format&fit=crop'">
                                     </div>
                                     <div class="nav-post-info">
                                         <span class="nav-genre">遺構</span>
@@ -81,7 +81,7 @@
 
         
         <div class="post-hero-image fade-in-up" style="animation-delay: 0.2s;">
-            <img src="/haikyo-archive/images/haikyo_school.png" alt="旧●●小学校跡">
+            <img src="/haikyo-archive/images/haikyo_school.png" alt="旧●●小学校跡" loading="eager" decoding="async">
         </div>
         
 
@@ -406,11 +406,40 @@
     /* Force single-column and prevent overflow */
     .article-layout {
         grid-template-columns: 1fr !important;
+        justify-content: stretch !important;
+        align-content: start !important;
         padding: 1rem 1rem 5rem 1rem !important;
         gap: 1rem !important;
         row-gap: 2rem !important;
         max-width: 100vw;
         overflow-x: hidden;
+        box-sizing: border-box;
+    }
+    /* Post content — full width centered */
+    .post-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box;
+    }
+    /* Images — stable loading with explicit dimensions */
+    .post-hero-image {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .post-hero-image img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 280px;
+        object-fit: cover;
+        display: block;
+    }
+    .post-body img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 1.5rem 0;
     }
     .article-sidebar-left,
     .article-sidebar-right {
